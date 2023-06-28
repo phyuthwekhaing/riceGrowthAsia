@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+    /** Basic Styling with CSS **/
+    /** Style the lines by removing the fill and applying a stroke */
+
+    .line {
+        fill: none;
+        stroke: #ffab00;
+        stroke-width: 3;
+    }
+    /**
+Font face and font family
+**/
+
+    @font-face {
+        font-family: CuratorBold;
+        src: url("{{url_for('static', filename='Fonts/Curator Head ST Bold.otf')}}");
+    }
+
+    @font-face {
+        font-family: CuratorRegular;
+        src: url("{{url_for('static', filename='Fonts/Curator Head ST Regular.otf')}}");
+    }
+    /** Style the dots by assigning a fill and stroke */
+
+    .dot {
+        fill: #ffab00;
+        stroke: #fff;
+    }
+
+    #vietnamPath {
+        stroke: #FED47D;
+    }
+
+    #indiaPath {
+        stroke: #FABE9C;
+    }
+
+    #thailandPath {
+        stroke: #F6AB9A;
+    }
+
+    body {
+        font-family: CuratorRegular;
+        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+    }
+
+    .tick text {
+        font-size: 13px;
+        color: #333333;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .headLine {
+        font-family: CuratorBold;
+        font-size: 21px;
+        color: #333333;
+    }
+
+    .deck {
+        font-family: CuratorRegular;
+        font-size: 16px;
+        line-height: 21px;
+        color: #333333;
+    }
+
+    .legendTitle {
+
+        font-family: CuratorRegular;
+        font-size: 13px;
+        color: #333333;
+    }
+
+    .legend {
+        font-family: CuratorBold;
+        font-size: 13px;
+        color: #333333;
+    }
+
+    .yAxisTitle {
+        font-family: CuratorRegular;
+        font-size: 13px;
+        color: #333333;
+    }
+
+    .lineChart,
+    .lineChart g {
+        pointer-events: all;
+    }
+
+    .legendText {
+        font-size: 13px;
+        font-family: CuratorBold;
+    }
+
+    .legendYear {
+        font-size: 13px;
+    }
+
+    @media screen and (max-width: 450px) {
+        .container {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: calc(100% - 40px);
+            max-width: calc(100% - 40px);
+        }
+        .yAxisTitle {
+            font-size: 16px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h3 class="headLine">
+            Causes of the drop in rice production in Asia
+        </h3>
+
+        <p class="deck">
+            Nearly a decade after a spike in global food prices sent shockwaves around the world, Asia's top rice producers are suffering from a blistering drought that threatens to cut output and boost prices of a staple for half the world's population.
+        </p>
+    </div>
+</body>
+
+<!-- Loading the d3 library -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="{{url_for('static', filename='graph_scripts_min.js')}}"></script>
+
+<script>
+    
+</script>
